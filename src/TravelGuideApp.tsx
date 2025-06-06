@@ -172,10 +172,10 @@ const TravelGuideApp = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen min-w-190vh bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
-        <div className="w-full max-w-[1440px] mx-auto px-6">
+        <div className="w-full px-6">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center space-x-4">
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-xl">
@@ -214,10 +214,10 @@ const TravelGuideApp = () => {
         </div>
       </header>
 
-      <div className="w-full max-w-[1600px] mx-auto px-12 py-12">
-        <div className="grid grid-cols-12 gap-8">
+      <div className="w-full px-4 py-4">
+        <div className="grid grid-cols-12 gap-6">
           {/* Chat Section */}
-          <div className="col-span-8">
+          <div className="col-span-9">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               {/* Chat Header */}
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-6">
@@ -241,7 +241,7 @@ const TravelGuideApp = () => {
                     }`}
                   >
                     <div
-                      className={`max-w-2xl px-6 py-4 rounded-2xl ${
+                      className={`max-w-2xl px-4 py-4 rounded-2xl ${
                         message.type === "user"
                           ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
                           : "bg-gray-100 text-gray-800"
@@ -339,7 +339,7 @@ const TravelGuideApp = () => {
           </div>
 
           {/* Trip Info Sidebar */}
-          <div className="col-span-4 space-y-8">
+          <div className="col-span-3 space-y-8">
             {/* Current Trip */}
             {currentTrip && (
               <div className="bg-white rounded-2xl shadow-xl p-8">
